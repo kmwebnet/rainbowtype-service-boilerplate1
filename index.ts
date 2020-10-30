@@ -34,8 +34,7 @@ interface tws extends ws {
 const connections = new Set<tws>();
 
 // app
-app.get('/app', (req, res) => res.sendFile('/usr/src/app/dist/index.html'));
-app.use('/app', express.static('app'));
+app.use('/app', express.static(__dirname + '/dist'));
 
 function keepAlive(ws: ws) {
   setTimeout(() => {

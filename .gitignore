@@ -1,5 +1,4 @@
 .vscode
-certs/*
 node_modules
 src/*.js
 index.js
