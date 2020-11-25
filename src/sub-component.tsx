@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-// Propsの型定義
 interface IProps {
   name: string;
 }
@@ -18,7 +17,7 @@ export class SubComponent extends React.Component<IProps, IState> {
   }
 
   handleClick() {
-    console.log('クリックされました');
+    console.log('clicked');
 
     this.setState({
       count: this.state.count + 1,
